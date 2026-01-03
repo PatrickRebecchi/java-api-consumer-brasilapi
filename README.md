@@ -53,8 +53,13 @@ Digite o código do banco (ou 0 para sair):
 237
 
 ===== BANCO =====
+
 Código: 237
+
 Nome: Banco Bradesco S.A.
+
 Nome completo: Banco Bradesco S.A.
+
 ISPB: 60746948
+
 =================
