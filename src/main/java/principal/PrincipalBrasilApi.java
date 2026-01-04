@@ -13,7 +13,7 @@ public class PrincipalBrasilApi {
         BrasilApiService service = new BrasilApiService();
 
         while (true) {
-            System.out.println("Digite o código do banco (ou 0 para sair):");
+            System.out.println("Digite o código do banco (ex: 001, 237):");
             String codigoBanco = scanner.nextLine();
 
             if (codigoBanco.equals("0")) {
@@ -24,6 +24,11 @@ public class PrincipalBrasilApi {
             if (codigoBanco.isBlank()) {
                 System.out.println("Código do banco não pode ser vazio.");
                 continue; // volta para o início do loop
+            }
+
+            if (!codigoBanco.matches("\\d+")) {
+                System.out.println("Digite apenas números.");
+                continue;
             }
 
             Banco banco = service.buscarBanco(codigoBanco);
