@@ -24,10 +24,13 @@ O objetivo do projeto é praticar:
 ## 📂 Estrutura do projeto
 
 src/main/java
+
 ├── principal
 │ └── PrincipalBrasilApi.java
+
 ├── service
 │ └── BrasilApiService.java
+
 └── modelos
 └── Banco.java
 
